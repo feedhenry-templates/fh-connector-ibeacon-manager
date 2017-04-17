@@ -10,6 +10,7 @@
     "underscore": "~1.6.0"
   },
   "devDependencies": {
+    "grunt": "^0.4.0",
     "grunt-concurrent": "latest",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "latest",
@@ -29,7 +30,12 @@
   "main": "application.js",
   "scripts": {
     "start": "node application.js",
-    "test": "grunt unit"
+    "serve": "grunt serve",
+    "unit": "grunt unit",
+    "coverage-unit": "grunt coverage-unit",
+    "accept": "grunt accept",
+    "coverage-accept": "grunt coverage-unit",
+    "test": "npm run unit"
   },
   "license": "Apache-2.0"
 }
