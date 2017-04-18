@@ -65,6 +65,11 @@ Create an iBeacon to manage within the platform. Fill in a major and minor ID be
 
 All the tests are in the "test/" directory. The cloud app is using mocha as the test runner. 
 
+### Pre-requisite
+
+* [Redis](https://redis.io/)
+* [MongoDB](https://www.mongodb.com/)
+
 ### Unit tests
 
 ```shell
@@ -72,33 +77,21 @@ npm run serve
 npm run unit
 ```
 
-or
-
-```shell
-npm run test
-```
-
 ### Unit coverage
 
 ```shell
+npm run serve
 npm run coverage-unit
 ```
 
-### Acceptance tests
-
-#### Pre-requisite
-
-* [Redis](https://redis.io/)
-* [MongoDB](https://www.mongodb.com/)
-
-##### Unit tests
+### Accept unit tests
 
 ```shell
 npm run serve  
 npm run accept
 ```
 
-##### coverage_accept
+### Accept coverage 
 
 ```shell
 npm run serve
