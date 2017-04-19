@@ -34,7 +34,6 @@
     "unit": "grunt unit",
     "coverage-unit": "grunt coverage-unit",
     "accept": "grunt accept",
-    "coverage-accept": "grunt coverage-unit",
     "test": "npm run unit"
   },
   "license": "Apache-2.0"

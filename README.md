@@ -90,10 +90,3 @@ npm run coverage-unit
 npm run serve  
 npm run accept
 ```
-
-### Accept coverage 
-
-```shell
-npm run serve
-npm run coverage-accept
-```

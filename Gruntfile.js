@@ -150,7 +150,6 @@ module.exports = function(grunt) {
   // Coverate tasks
   grunt.registerTask('coverage', ['shell:coverage_unit', 'shell:coverage_accept']);
   grunt.registerTask('coverage-unit', ['shell:coverage_unit']);
-  grunt.registerTask('coverage-accept', ['env:local', 'shell:coverage_accept']);
 
   // Making grunt default to force in order not to break the project.
   grunt.option('force', true);
