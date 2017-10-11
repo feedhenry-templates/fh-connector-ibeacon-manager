@@ -2,12 +2,13 @@
   "name": "iBeaconManager",
   "version": "0.1.0",
   "dependencies": {
-    "express": "4.0.0",
-    "request": "2.79.0",
+    "express": "4.16.0",
+    "request": "2.81.0",
     "fh-mbaas-api": "~8.0.2",
-    "body-parser": "~1.0.2",
+    "body-parser": "~1.17.1",
     "cors": "~2.2.0",
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+    "snyk": "^1.42.6"
   },
   "devDependencies": {
     "grunt": "^0.4.0",
@@ -34,7 +35,10 @@
     "unit": "grunt unit",
     "coverage-unit": "grunt coverage-unit",
     "accept": "grunt accept",
-    "test": "npm run unit"
+    "test": "npm run unit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "snyk": true
 }
